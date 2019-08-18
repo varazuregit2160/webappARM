@@ -57,7 +57,7 @@
     }
   },
   "variables": {
-    "webSiteName": "webappARM"
+    "webSiteName": "webappARM1"
   },
   "resources": [
     {
