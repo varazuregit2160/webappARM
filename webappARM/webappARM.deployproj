@@ -30,5 +30,13 @@
     <Content Include="WebSite.json" />
     <Content Include="WebSite.parameters.json" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\webappARM1\webappARM1.csproj">
+      <Targets>
+      </Targets>
+      <AdditionalProperties>WebPublishMethod=Package;DeployOnBuild=true;Configuration=Release;PublishProfile=Default;DesktopBuildPackageLocation=..\webappARM\$(ProjectReferencesOutputPath)\webappARM1\package.zip</AdditionalProperties>
+      <IncludeFilePath>$(ProjectReferencesOutputPath)\webappARM1\package.zip</IncludeFilePath>
+    </ProjectReference>
+  </ItemGroup>
   <Target Name="GetReferenceAssemblyPaths" />
 </Project>
